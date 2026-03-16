@@ -1,6 +1,18 @@
 public class PalindromeCheckerApp {
-    public static void main(String[] args){
-        System.out.println("Welcome to palindrome checker app management system");
-        System.out.println("Modify this logic to usecase 2");
+    public static void main(String[] args) {
+        String original = "madam";
+        String reversed = "";
+
+        // Reverse the string using a for loop
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reversed = reversed + original.charAt(i);
+        }
+
+        // Compare original and reversed strings
+        if (original.equals(reversed)) {
+            System.out.println("The string is a palindrome.");
+        } else {
+            System.out.println("The string is not a palindrome.");
+        }
     }
 }
